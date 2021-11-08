@@ -2,9 +2,8 @@ package factory.factorymethod;
 
 import factory.simplefactory.product.BWM320;
 
-public class FactoryBWM320 implements FactoryBWM {
+public class FactoryBWM320 {
 
-    @Override
     public BWM320 createBWM() {
         return new BWM320();
     }
