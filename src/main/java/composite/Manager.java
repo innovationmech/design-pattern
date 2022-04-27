@@ -3,6 +3,7 @@ package composite;
 import java.util.ArrayList;
 import java.util.List;
 
+// composite
 public class Manager extends Component
 {
     private List<Component> components = new ArrayList<>();

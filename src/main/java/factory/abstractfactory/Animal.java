@@ -6,7 +6,9 @@ package factory.abstractfactory;
  * @author <a href="dreamerlyj@gmail.com">liyanjie</a>
  * @since
  */
-public interface AbstractFactory<T>
+public interface Animal
 {
-    T create(String animalType);
+    String getAnimal();
+
+    String mkSound();
 }

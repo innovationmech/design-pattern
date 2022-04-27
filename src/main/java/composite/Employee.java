@@ -1,5 +1,6 @@
 package composite;
 
+// leaf
 public class Employee extends Component
 {
 
