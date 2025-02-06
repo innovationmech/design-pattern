@@ -12,6 +12,10 @@ public class MsgProcessChain
         return this;
     }
 
+    public void removeChain(Process process) {
+        chains.remove(process);
+    }
+
     public void process(String msg) {
         for (Process chain : chains) {
             chain.doProcess(msg);

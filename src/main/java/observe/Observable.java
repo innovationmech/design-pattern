@@ -3,7 +3,8 @@ package observe;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Observable
+// 主题
+public abstract class Observable
 {
     private List<Observer> observers = new ArrayList<>();
 

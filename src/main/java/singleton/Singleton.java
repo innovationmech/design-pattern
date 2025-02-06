@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Singleton
 {
-    public List<String> list = null;
+    public List<String> list;
 
     private Singleton() {
         list = new ArrayList<>();
     }
 
-    static class InnerSingleton {
+    private static class InnerSingleton {
         private static Singleton instance = new Singleton();
     }
 
