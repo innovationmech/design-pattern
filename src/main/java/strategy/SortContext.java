@@ -1,14 +1,14 @@
 package strategy;
 
-public class Sort implements ISort
+public class SortContext implements ISort
 {
     private ISort sort;
 
-    Sort(ISort sort) {
+    SortContext(ISort sort) {
         this.sort = sort;
     }
 
-    Sort(SortStrategy strategy) {
+    SortContext(SortStrategy strategy) {
         setStrategy(strategy);
     }
 
