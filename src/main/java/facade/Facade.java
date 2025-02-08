@@ -1,16 +1,20 @@
 package facade;
 
-public class Facade
-{
-    public void open() {
-        Browser.open();
-        IDE.open();
-        WeChat.open();
+public class Facade {
+
+    private SubsystemA subsystemA;
+    private SubsystemB subsystemB;
+    private SubsystemC subsystemC;
+
+    public Facade() {
+        subsystemA = new SubsystemA();
+        subsystemB = new SubsystemB();
+        subsystemC = new SubsystemC();
     }
 
-    public void close() {
-        Browser.close();
-        Browser.close();
-        Browser.close();
+    public void simplifiedOperation() {
+        subsystemA.operationA();
+        subsystemB.operationB();
+        subsystemC.operationC();
     }
 }
