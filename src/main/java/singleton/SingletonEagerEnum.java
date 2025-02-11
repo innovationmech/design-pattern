@@ -3,6 +3,7 @@ package singleton;
 import java.util.ArrayList;
 import java.util.List;
 
+// 枚举单例；线程安全
 public enum SingletonEagerEnum
 {
     INSTANCE;

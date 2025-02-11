@@ -16,7 +16,7 @@ public class SingletonLazyEnum
 
         private SingletonLazyEnum instance = null;
 
-        private EnumSingleton() {
+        EnumSingleton() {
             this.instance = new SingletonLazyEnum();
         }
 
