@@ -1,12 +1,7 @@
 package factory.abstractfactory;
 
-/**
- * todo
- *
- * @author <a href="dreamerlyj@gmail.com">liyanjie</a>
- * @since
- */
-public interface AbstractFactory<T>
-{
-    T create(String animalType);
+public interface AbstractFactory {
+
+    ProductA createProductA();
+    ProductB createProductB();
 }
